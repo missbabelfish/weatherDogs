@@ -1,0 +1,148 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+body {
+  height: 100%;
+  background-image: url('cloudsBG.jpeg');
+  background-size: cover;
+  background-color: rgb(109, 203, 203);
+  height: 100vh;
+  font-family: 'Montserrat';
+  /* overflow: -moz-hidden-unscrollable;
+  overflow: hidden; */
+}
+
+main {
+  max-height: 98%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.left, .right {
+  width: 80%;  
+}
+
+.left {
+  padding: 10vh 0 10vh 5vh;
+}
+
+.right {
+  padding: 8vh 10vh 10vh 0;
+}
+
+h1 {
+  width: 65%;
+  text-align: center;
+  margin: 0 auto 3vh;
+  font-size: 4rem;
+  color: rgb(3, 43, 73);
+}
+
+input, button {
+  height: 5vh;
+  font: 200 'Montserrat', Verdana, sans-serif;
+}
+
+#love {
+  color: rgb(245, 175, 137);
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-height: 45%;
+  max-width: 60%;
+  border: 2px solid gray;
+  margin: 3vh auto;
+}
+
+h4 {
+  padding: 3vh 0 0 0;
+  color: navy;
+}
+
+input::-webkit-input-placeholder { 
+  color: rgb(17, 0, 255);
+}
+input::-moz-placeholder { 
+  color: blue;
+}
+input:-ms-input-placeholder { 
+  color: blue;
+}
+input:-moz-placeholder { 
+  color: blue;
+}
+
+@media (max-width: 775px) {
+  
+  body {
+    height: 100vh;
+    background-size: auto;
+  }
+  
+  main {
+    margin: 5vh auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    height: 100%;
+  }
+
+  .left, .right {
+    margin: 0 auto;
+    padding: 2vh 0 0 0;
+    width: 90%
+  }
+
+  h1 {
+    width: 100%;
+    font-size: 5vh;
+    margin: 0;
+    padding-bottom: 2vh;
+  }
+
+  input, button {
+    height: 4vh;
+  }
+
+  img {
+    margin: 2vh auto;
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  h2 {
+    padding: 0;
+    margin: 0;
+  }
+
+  h4 {
+    padding: 0;
+  }
+}
